@@ -1,4 +1,10 @@
-# SatireTR: Turkish Satirical News Dataset
+# Make Satire Boring Again:Reducing Stylistic Bias of Satirical Corpus by Utilizing Generative LLMs
+
+Satire detection is essential for accurately extracting opinions from textual data and combating misinformation online. However, the lack of diverse corpora for satire leads to the problem of stylistic bias which impacts the models' detection performances.
+This study proposes a debiasing approach for satire detection, focusing on reducing biases in training data by utilizing generative large language models. 
+The approach is evaluated in both cross-domain (irony detection) and cross-lingual (English) settings. Results show that the debiasing method enhances the robustness and generalizability of the models for satire and irony detection tasks in Turkish and English. However, its impact on causal language models, such as Llama-3.1, is limited. Additionally, this work curates and presents the Turkish Satirical News Dataset with detailed human annotations, with case studies on classification, debiasing, and explainability.
+
+## SatireTR: Turkish Satirical News Dataset
 
 Turkish Satirical News Dataset consists of `SATIRICAL` and `NON-SATIRICAL` corpora collected from Turkish satirical news publication Zaytung and Turkish News Agency AA.
 
@@ -62,5 +68,9 @@ python llama_finetune.py \
 
 # Citation
 
+Please cite the paper as follows if you find the study useful.
 
+```
+
+```
 
