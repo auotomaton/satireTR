@@ -257,7 +257,7 @@ else:
         }
     }
 
-    # wandb.login(key=bb1d16d7e0ec95e5bf337e52d876ed48c1d773df)
+    # wandb.login(key=WANDB_KEY)
     sweep_id = wandb.sweep(sweep_config, project=wandb_proj_name)
 
     wandb.agent(sweep_id, function=init_model, count=4)
