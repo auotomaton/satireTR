@@ -72,7 +72,7 @@ if skip_train:
     
     model = AutoPeftModelForCausalLM.from_pretrained(
         OUTPUT_DIR,
-        cache_dir="/mnt/proj1/dd-23-122/.cache",
+        cache_dir=args.cache_dir,
         torch_dtype=torch.float16,
         #low_cpu_mem_usage=True,
     )
@@ -128,7 +128,7 @@ else:
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
         device_map="auto",
-        cache_dir="/mnt/proj1/dd-23-122/.cache",
+        cache_dir=args.cache_dir,
         attn_implementation="flash_attention_2",
         quantization_config=None if skip_train else bnb_config,
     )
