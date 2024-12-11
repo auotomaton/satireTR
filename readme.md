@@ -24,7 +24,13 @@ The dataset includes 2202 `SATIRICAL` and 4781 `NON-SATIRICAL` articles, and hum
 
 This dataset is curated in the scope of the research "Make Satire Boring Again: Reducing Stylistic Bias of Satirical Corpus by Utilizing Generative LLMs". 
 
-The codes and generated data are available under the `Debiasing Pipeline` folder.
+The codes and generated data are available under the `DebiasingPipeline` folder.
+
+## Train and Test Data
+
+* Train and test samples from the Turkish Satirical News Dataset are available under `DebiasingPipeline/code/data`.
+* For cross-domain testing, [IronyTR](https://github.com/teghub/IronyTR) is used.
+* For cross-lingual testing, [News Headlines Dataset](https://www.kaggle.com/datasets/rmisra/news-headlines-dataset-for-sarcasm-detection/data) is used.
 
 ## Training Satire Classifiers
 
@@ -64,7 +70,6 @@ python llama_finetune.py \
 --batch_size 2 \
 --wandb_proj_name "zaytung" \ 
 ```
-
 
 # Citation
 
